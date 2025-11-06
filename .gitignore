@@ -1,0 +1,17 @@
+Files and directories to be ignored by Git
+
+1. Secrets and Local Environment Settings
+
+This is the critical line that hides your API keys
+
+.env
+
+2. IDE and Build System files
+
+.vscode/
+
+3. Dependencies and temporary files
+
+node_modules/
+.log
+npm-debug.log

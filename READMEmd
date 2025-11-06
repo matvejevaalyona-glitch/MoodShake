@@ -1,0 +1,24 @@
+
+MoodShake/
+└── README.md
+
+_MoodShake_
+The drink suggestion based on your current mood
+
+_Brief Description_
+Mood Shake is an interactive web application designed to suggest the perfect cocktail based on your current emotional state (mood).
+The user selects their mood (e.g., Energetic, Sad, Curious), and the application suggests up to three suitable drinks, including the full recipe, image, and instructions. As an ironic bonus, the application also provides a random Quote of the day to think about while enjoying your coctail.
+
+_Team members_
+
+Alyona Matvejeva, Zanda Rasa, Jekabs Musins
+
+_API Used
+The following API is used to fetch cocktail data, recipes, and images:
+API Name: TheCocktailDB
+Documentation: https://www.thecocktaildb.com/api.php
+Key Methods: Filter by Ingredient (for mood matching) and Lookup full cocktail details by id (for fetching the full recipe).
+
+_Security and Setup_
+The project does not require a secret API key to function, as TheCocktailDB provides public endpoints. However, to adhere to best practices, we use a .gitignore file to protect any potential future keys.
+Getting Started: Install dependencies and launch mood_mixer.html in your browser.
