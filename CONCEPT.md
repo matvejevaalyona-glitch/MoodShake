@@ -30,3 +30,15 @@ The application is designed to make it easier to decide which cocktail to prepar
 Notes on Documentation and Data Quality
 
 Error Contract: The documentation does not describe error codes. Testing revealed that when no data is found, the API consistently returns 200 OK with a value of {"drinks": null}, which must be handled in the application logic.
+
+## Technical Implementation
+
+API Integration: Connected to TheCocktailDB using fetch with async/await to retrieve cocktails based on user-selected moods.
+
+Data Handling: Limited results to the first 3 cocktails; extracted and formatted ingredients, instructions, and images for display.
+
+Error Handling: Implemented manual detection of empty API responses (drinks: null), network errors, and unexpected issues, displaying user-friendly messages while logging details to the console.
+
+Random Quote Feature: Added an array of ironic alcohol quotes and displayed one random quote per API request.
+
+Loading Indicator: Shows and hides dynamically while data is being fetched.
