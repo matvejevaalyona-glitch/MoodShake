@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mood Cocktail Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🍸 Mood Shake</h1>
+    <p>Choose your current mood:</p>
+    <select id="moodSelect">
+      <option value="">-- Select Mood --</option>
+      <option value="happy">Happy</option>
+      <option value="sad">Sad</option>
+      <option value="tired">Tired</option>
+      <option value="adventurous">Adventurous</option>
+    </select>
+    <button id="getCocktailBtn">Get Cocktails</button>
+
+    <div id="loading" class="hidden">Loading cocktails...</div>
+    <div id="error" class="error hidden"></div>
+    <div id="cocktailResults"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
