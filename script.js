@@ -91,5 +91,12 @@ getCocktailBtn.addEventListener("click", async () => {
     const randomQuote = ironicQuote[Math.floor(Math.random() * ironicQuote.length)];
     cocktailResults.innerHTML += `<div class="quote">${randomQuote}</div>`;
 
-  } 
+  } catch (error) {
+    console.error("Error fetching cocktails:", error);
+    errorEl.textContent = error.message || "Something went wrong. Please try again.";
+    errorEl.classList.remove("hidden");
+  } finally {
+    // --- Step 12: Hide loading indicator ---
+    loadingEl.classList.add("hidden");
+  }
 });
