@@ -12,6 +12,10 @@ const moodToKeyword = {
   sad: "whiskey",
   tired: "coffee",
   adventurous: "rum",
+  stressed: "gin",         
+  party: "vodka",          
+  romantic: "champagne",   
+  chill: "tequila"         
 };
 
 // Array of hardcoded ironic alcohol quotes

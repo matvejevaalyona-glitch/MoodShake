@@ -1,15 +1,17 @@
-/* ===========================
+/* 
    Reset & Base Styles
-   =========================== */
+    */
 * {
   margin: 0;
-  padding: 0;
+  padding: ;
   box-sizing: border-box;
   font-family: 'Orbitron', sans-serif;
+  text-align: center;
 }
 
+
 body {
-  background-color: #111; /* dark but not pure black */
+  background-color: #111; 
   color: #fff;
   min-height: 100vh;
   display: flex;
@@ -18,9 +20,16 @@ body {
   padding: 40px 20px;
 }
 
-/* ===========================
-   Mood Selector & Button
-   =========================== */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+}
+
+
+/* Mood Selector & Button */
+ 
 select, button {
   font-family: 'Orbitron', sans-serif;
   font-size: 1rem;
@@ -33,6 +42,7 @@ select, button {
   color: #0ff;
   cursor: pointer;
   margin: 10px;
+  align-items: center;
 }
 
 select:hover, button:hover {
@@ -44,9 +54,7 @@ button:active {
   color: #f0f;
 }
 
-/* ===========================
-   Loading & Error Messages
-   =========================== */
+/* Loading & Error Messages */
 #loading {
   color: #0f0;
   font-size: 1.2rem;
@@ -62,9 +70,9 @@ button:active {
   margin-top: 10px;
 }
 
-/* ===========================
+/* 
    Cocktail Cards
-   =========================== */
+   */
 #cocktailResults {
   margin-top: 20px;
   display: flex;
@@ -96,13 +104,13 @@ button:active {
   border: 1px solid #0ff;
 }
 
-/* ===========================
-   Text Styles
-   =========================== */
+/* Text Styles
+   */
 h3 {
   color: #f0f;
   text-shadow: 0 0 3px #f0f, 0 0 8px #f0f;
   margin-bottom: 8px;
+ 
 }
 
 p {
